@@ -1,7 +1,11 @@
 import React from 'react';
+
+
 import { View, Text, Button, TextInput, TouchableOpacity, ScrollView, StyleSheet, Alert, Dimensions } from 'react-native';
 
+
 import { SafeAreaView } from 'react-native-safe-area-context';
+
 import {
   BookOpen,
   FileText,
@@ -29,23 +33,8 @@ const { width } = Dimensions.get('window');
 
 
 export default function HomeScreen() {
-  const [branch, setBranch] = React.useState('');
-  const [userId, setUserId] = React.useState('');
 
-  // Add book form fields
-  const [title, setTitle] = React.useState('');
-  const [author, setAuthor] = React.useState('');
-  const [edition, setEdition] = React.useState('');
-  const [condition, setCondition] = React.useState('');
-  const [uploadedBy, setUploadedBy] = React.useState('');
 
-  const handleUpdate = async () => {
-    
-  };
-
-  const handleAddBook = async () => {
-    
-  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -77,7 +66,6 @@ export default function HomeScreen() {
             </View>
           </View>
 
-          {/* Update Branch */}
           
         </View>
       </ScrollView>
