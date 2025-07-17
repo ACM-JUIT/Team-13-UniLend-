@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { Menu, Search } from 'lucide-react-native';
@@ -20,16 +18,13 @@ colors={['#F9F1F0', '#FADCD9']}
       end={{ x: 1, y: 1 }}
       style={styles.header}
     >
-      {/* Animated Bounce View */}
       <Animatable.View animation="fadeInDown" delay={100} style={styles.innerContainer}>
-        {/* Drawer Button with Glow */}
         <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.menuButton}>
           <LinearGradient colors={['#FADCD9', '#F8AFA6']} style={styles.menuGlow}>
             <Menu size={26} color="white" />
           </LinearGradient>
         </TouchableOpacity>
 
-        {/* Greeting Text */}
         <Animatable.View animation="fadeInLeft" delay={200} style={styles.textContainer}>
           <Text style={styles.greeting}>Hey Learner!</Text>
           <Text style={styles.subText}>Let’s upload something valuable 🚀</Text>

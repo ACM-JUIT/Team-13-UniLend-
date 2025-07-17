@@ -30,7 +30,7 @@ const UploadBookHeader = () => {
             }}
             rightComponent={
               <Image
-                source={require('../assets/icon.png')} // Replace with your app icon
+                source={require('../assets/icon.png')} 
                 style={{ width: 35, height: 35 }}
               />
             }

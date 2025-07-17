@@ -8,18 +8,17 @@ import SignInScreen from './screens/signInScreen';
 import SignUpScreen from './screens/signUpScreen';
 import UploadBooks from './screens/add_items_books';
 
-
+import UploadNotes from './screens/add_items_notes';
 
 // import Modal from './screens/modal';
 import DrawerNavigator from './navigation/drawer-navigator';
 
-import UploadBookHeader from './components/resources_book_header';
-
-// import RootStack from './navigation';
-
 import TabLayout from './navigation/tab-navigator';
 
 const Stack = createNativeStackNavigator();
+
+
+import ProductDetail from './screens/productDetailScreen';
 
 export default function App() {
   return (
@@ -51,12 +50,24 @@ export default function App() {
           options={{ headerShown: false, 
             title: 'Add Book' }}
         />
+        <Stack.Screen
+            name = "UploadNotes"
+            component = {UploadNotes}
+            options = {{ headerShown: false,
+              title: 'Add Notes',
+            }}
+        />
         
         <Stack.Screen
           name="TabLayout"
           component={TabLayout}
           options={{ headerShown: false }}
         /> 
+        <Stack.Screen
+          name="ProductDetail"
+          component={ProductDetail}
+          options={{ headerShown: false }}
+        />
   
         
 

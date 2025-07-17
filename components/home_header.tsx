@@ -16,18 +16,15 @@ const HomeHeader = () => {
       end={{ x: 1, y: 1 }}
     >
       <View style={styles.headerContent}>
-        {/* Drawer Toggle Button */}
         <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={styles.menuButton}>
           <Menu size={24} color="white" />
         </TouchableOpacity>
 
-        {/* Greeting Text */}
         <View style={styles.textContainer}>
           <Text style={styles.greeting}>Welcome</Text>
           <Text style={styles.tagline}>Find your next study resource</Text>
         </View>
 
-        {/* Search Button */}
         <TouchableOpacity style={styles.searchButton}>
           <Search size={24} color="#3B82F6" />
         </TouchableOpacity>
